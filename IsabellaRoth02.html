@@ -1,0 +1,87 @@
+<html>
+<style>
+    #globe{
+        position:absolute;
+        top: 25vmin;
+        left: 25vmin;
+        width: 50vmin;
+        height: 50vmin;
+        border-radius: 50%;
+        overflow: hidden;
+        border:px solid black;
+        z-index: -1;
+        background-color: steelblue;
+    }
+    #circle{
+        position:absolute;
+        top: 25vmin;
+        left: 25vmin;
+        width: 50vmin;
+        height: 50vmin;
+        border-radius: 50%;
+        border: 1px solid black;
+        background-color: white;
+        filter: opacity(1);
+        z-index: 5;
+    }
+    #circle:hover{
+        filter: opacity(.3);
+    }
+    #base{
+       position: absolute;
+        top: 65.5vmin;
+        left: 28vmin;
+        width: 44vmin;
+        height: 10vmin;
+        background-color: black;
+        transform: perspective(5em) rotateX(10deg);
+        z-index:10;
+        color: lightblue;
+        text-align: center;
+        font-size: 4vmin;
+    }
+    #ground{
+        position:absolute;
+        top: 40vmin;
+        left: 0vmin;
+        width: 50vmin;
+        height: 50vmin;
+        z-index: 1;
+        background-color:gainsboro;
+    }
+     #snow {
+        position:absolute;
+        top: 25vmin;
+        left: 25vmin;
+        width: 50vmin;
+        height: 50vmin;
+        border-radius: 50%;
+        background-color:black;
+        background-image: url("https://previews.123rf.com/images/romvo/romvo1312/romvo131200007/24160802-the-white-snow-on-the-soft-light-gray-mesh-background-winter-theme-no-transparent-objects.jpg");
+        background-size:cover;
+        z-index:0;
+        filter: opacity(0.5);
+    }
+   #snowfall{
+        position:absolute;
+        width:100%;
+        height: 100%;
+        background-image: url("https://media1.tenor.com/images/5af04cce723e3c906ed1a937da9c7203/tenor.gif?itemid=3394521");
+        animation:snowfall 25s linear infinite;
+        z-index:4;
+        }     
+/*@keyframes snowfall {
+        0% {background-position: 0px 0px, 0px 0px, 0px 0px;}
+        100% {background-position: 500px 1000px, 400px 400px, 300px 300px
+    }
+</style>
+<body>
+    <div id="circle"></div>
+    <div id="globe">
+    <div id="snowfall"></div>
+        <div id="ground"></div>
+    </div>
+    <div id="base">A Winter Wonderland</div>
+    <div id="snow"> </div>
+</body>
+</html>
